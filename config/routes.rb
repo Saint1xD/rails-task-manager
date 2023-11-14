@@ -6,5 +6,12 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
+ #GET 'LINK DPS DA /', to: ""
+  get 'tasks', to: "tasks#index"
+  # get 'tasks/1', to: "tasks#1"
+  get "tasks/:id", to: "tasks#show"
+  # Task.all.each do |task|
+  #   get "tasks/#{task.id}", to: 'tasks#task'
+  # end
   # root "posts#index"
 end

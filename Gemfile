@@ -55,7 +55,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-
+  gem "rails_live_reload"
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
